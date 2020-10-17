@@ -1,1 +1,1 @@
-# Hackerrank-JS-Basic-skill-Test
+# HackerRank-JS-Basic-skill-Test
