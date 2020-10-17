@@ -1,0 +1,35 @@
+const counter = (function counter() {
+  let value = 0;
+  return {
+    getValue: function () {
+      return value;
+    },
+    changeBy: function (k) {
+      value += k;
+    },
+    setValue: function (val) {
+      value = val;
+    },
+  };
+})();
+
+const getFixedCounter = (k) => {
+  let myCounter = counter;
+  return {
+    increment: () => {
+      myCounter.changeBy(k);
+    },
+    decrement: () => {
+      myCounter.changeBy(-k);
+      cd;
+    },
+    getValue: () => {
+      return myCounter.getValue();
+    },
+  };
+};
+counter.setValue(6);
+console.log(counter.getValue());
+counter.changeBy(10);
+counter.changeBy(20);
+console.log(counter.getValue());
