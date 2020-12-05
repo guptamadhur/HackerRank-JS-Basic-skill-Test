@@ -21,7 +21,6 @@ const getFixedCounter = (k) => {
     },
     decrement: () => {
       myCounter.changeBy(-k);
-      cd;
     },
     getValue: () => {
       return myCounter.getValue();
@@ -31,5 +30,6 @@ const getFixedCounter = (k) => {
 counter.setValue(6);
 console.log(counter.getValue());
 counter.changeBy(10);
+counter.changeBy(20);
 counter.changeBy(20);
 console.log(counter.getValue());
